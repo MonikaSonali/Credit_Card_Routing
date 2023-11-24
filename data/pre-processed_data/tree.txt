@@ -1,0 +1,28 @@
+project-root/
+    ├───.gitignore                      # list of files to ignore
+    ├───LICENSE.txt                     # License File(eg. MIT License)
+    ├───README.md                       # Project Documentation
+    ├───requirements.txt                # Project dependency library packages
+    │
+    ├───data
+    │   ├───PSP_Jan_Feb_2019.xlsx       # Raw Data sheet
+    │   └───pre-processed_data          # Directory containing processed data (if applicable)
+    │
+    ├───models
+    │       └───random_forest_model.pkl     # Trained Random Forest Model
+    │
+    ├───notebooks                           # Jupyter notebooks
+    │       └───analysis_modelling.ipynb
+    │
+    ├───references                  # Reference or support documents provided by business or domain experts
+    └───src
+        ├───gui.py                  # Script to run the live dashboard/GUI
+        ├───utils.py                # Utility functions
+        │
+        ├───features
+        │       ├───1_preprocessing.py               # Script to preprocess raw data
+        │       └───2_feature_engineering.py         # Script to generate features from raw data
+        │
+        └───models
+               ├───1_model_training.py             # Script to train the model
+               └───2_model_prediction.py           # Script to use model for prediction
